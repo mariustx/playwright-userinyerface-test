@@ -1,2 +1,17 @@
 # playwright-userinyerface-test
-Tests for https://www.userinyerface.com/
+- install Node JS: https://nodejs.org/en/download/
+- go to project folder: 
+    - ```npm init playwright@latest```   
+- install extension Playwright test for VS code: [Ctrl]+[Shift]+[P]
+    - once installed, open the command panel and type: Install Playwright
+- install extension ESLint
+- in *playwright.config.ts* add: 
+    - ```screenshot: 'only-on-failure'``` 
+    - ```video: 'on'```
+- to run the test and see the results: 
+    - ```npx playwright test --reporter=html```
+    - ```npx playwright show-report```
+- to run tests: 
+    - **all**: ```npx playwright test```
+    - **specific file**: ```npx playwright test tests/your-file.spec.ts```
+    - **specific folder/dir**: ```npx playwright test tests/your-dir/```

@@ -1,0 +1,14 @@
+{
+  "name": "playwright-userinyerface-test",
+  "version": "1.0.0",
+  "description": "- install Node JS: https://nodejs.org/en/download/\r - go to project folder: \r     - ```npm init playwright@latest```   \r         - *TypeScript*\r         - *tests* \r - install extension Playwright test for VS code: [Ctrl]+[Shift]+[P]\r     - once installed, open the command panel and type: Install Playwright\r - install extension ESLint\r - in playwright.config.ts: \r     - added screenshots only on failure \r     - video: 'on'\r - to run the test and see the results: \r     - ```npx playwright test --reporter=html```\r     - ```npx playwright show-report```\r - to run tests: \r     - **all**: ```npx playwright test```\r     - **specific file**: ```npx playwright test tests/your-file.spec.ts```\r     - **specific folder/dir**: ```npx playwright test tests/your-dir/```",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.43.0",
+    "@types/node": "^20.12.7"
+  }
+}
