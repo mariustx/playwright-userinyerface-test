@@ -29,13 +29,21 @@ export class Page2 extends Forms {
 
         await this.uploadImageViaFileChooser(page);
 
+        await this.select3Interests(interest1, interest2, interest3, page);
+
+        await this.clickOnNextButton(page);
+
+    }
+
+    private async clickOnNextButton(page: any) {
+        await page.locator(this.nextButton).click();
+    }
+
+    private async select3Interests(interest1: string, interest2: string, interest3: string, page: any) {
         const checkboxes = ['unselectall', interest1, interest2, interest3];
         for (const interest of checkboxes) {
-            await page.locator(this.createCheckboxSelector(interest)).click();
+            await page.locator(this.interestCheckboxSelector(interest)).click();
         }
-
-        await page.locator(this.nextButton).click();
-
     }
 
     async uploadImageViaFileChooser(page: any) {
@@ -53,7 +61,7 @@ export class Page2 extends Forms {
         await download.saveAs('download/' + download.suggestedFilename());
     }
 
-    createCheckboxSelector(interest: string) {
+    interestCheckboxSelector(interest: string) {
         return `[for="interest_${interest}"]`;
     }
 }

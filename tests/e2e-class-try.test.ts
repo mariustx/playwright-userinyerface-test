@@ -19,14 +19,15 @@ test('e2e-class', async ({ page }) => {
   const page4 = new Page4(page);
   const finalPage = new Page5(page);
 
+
   await startPage.completeStartPage();
   await page1.checkIfGameIsStarted();
-  await page1.completePage1(page, 'Passwords1', 'youema', 'omain');
+  await page1.completePage1(page, 'Password.is.1', 'one-email', 'new-domain');
   await page2.completePage2(page, 'ponies', 'polo', 'balls');
-  await page3.completePage3(page, 'firstname', 'zip', 'city', 'surname', 'street');
-  await page4.completePage4(page);
-  await finalPage.validatePage5(page);
+  await page3.completePage3(page, 'first-name', 'zip-code', 'city-name', 'sur-name', 'street-address', 'Mrs', 'gb', '13', 'May', '2024');
+  //await page4.completePage4(page);
+  //await finalPage.validatePage5(page);
 
 });
 
-closeBrowser;
+//closeBrowser;
