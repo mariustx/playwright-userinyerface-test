@@ -1,0 +1,3 @@
+"test_case","password","email","domainName","domainLevel","interest1","interest2","interest3","firstName","zipCode","cityName","surName","streetAddress","title","countryCode","birthDay","birthMonth","birthYear"
+"test-1","Password.is.1","one-email","new-domain",".com","ponies","polo","balls","first-Name","zip-Code","city-Name","sur-Name","street-Address","Mrs","ro","9","May","2024"
+"test-2","Password.is1AAA","two-email","newer-domain",".de","closets","tires","cables","firstName+","zipCode+","cityName+","surName+","streetAddress+","Mrs","de","19","March","2024"
